@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input, Button, HStack, FormControl, FormErrorMessage } from "@chakra-ui/react";
+import "./Form.css";
 
 const Form = ({ todos, setTodos }) => {
   const [inputValue, setInputValue] = useState("");
@@ -14,8 +14,8 @@ const Form = ({ todos, setTodos }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const validation = validate(inputValue);
+
     if (validation) {
       setError(validation);
       return;
@@ -33,20 +33,20 @@ const Form = ({ todos, setTodos }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <FormControl isInvalid={error}>
-        <HStack>
-          <Input
-            placeholder="Nueva tarea..."
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-          />
-          <Button colorScheme="blue" type="submit">
-            Agregar
-          </Button>
-        </HStack>
-        <FormErrorMessage>{error}</FormErrorMessage>
-      </FormControl>
+    <form className="form" onSubmit={handleSubmit}>
+      <input
+        className="input"
+        type="text"
+        placeholder="Nueva tarea..."
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+
+      <button className="btn" type="submit">
+        Agregar
+      </button>
+
+      {error && <p className="error">{error}</p>}
     </form>
   );
 };

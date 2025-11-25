@@ -1,9 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { useState } from "react";
+import Form from "./components/Form";
+import TodoList from "./components/TodoList";
+import "./App.css";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function App() {
+  const [todos, setTodos] = useState([]);
+
+  return (
+    <div className="app">
+      <h1>Lista de Tareas</h1>
+      <Form todos={todos} setTodos={setTodos} />
+      <TodoList todos={todos} setTodos={setTodos} />
+    </div>
+  );
+}
+
+export default App;

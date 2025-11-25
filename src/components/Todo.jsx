@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { HStack, Text, IconButton, Input } from "@chakra-ui/react";
-import { FaCheck, FaTrash, FaEdit } from "react-icons/fa";
+import "./Todo.css";
 
-const Todo = ({ todo, setTodos, todos }) => {
+const Todo = ({ todo, todos, setTodos }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(todo.text);
 
@@ -15,7 +14,7 @@ const Todo = ({ todo, setTodos, todos }) => {
   };
 
   const deleteTodo = () => {
-    if (confirm("¿Eliminar esta tarea? Esta acción no se puede deshacer.")) {
+    if (confirm("¿Eliminar esta tarea?")) {
       setTodos(todos.filter((t) => t.id !== todo.id));
     }
   };
@@ -32,52 +31,27 @@ const Todo = ({ todo, setTodos, todos }) => {
   };
 
   return (
-    <HStack
-      p={3}
-      borderWidth="1px"
-      borderRadius="lg"
-      justifyContent="space-between"
-    >
+    <div className="todo">
       {isEditing ? (
-        <Input
+        <input
+          className="edit-input"
           value={editValue}
           onChange={(e) => setEditValue(e.target.value)}
           onBlur={saveEdit}
           autoFocus
         />
       ) : (
-        <Text
-          textDecoration={todo.completed ? "line-through" : "none"}
-          opacity={todo.completed ? 0.6 : 1}
-        >
-          {todo.text}
-        </Text>
+        <p className={todo.completed ? "completed" : ""}>{todo.text}</p>
       )}
 
-      <HStack>
-        <IconButton
-          icon={<FaCheck />}
-          colorScheme="green"
-          size="sm"
-          onClick={toggleCompleted}
-        />
-
-        <IconButton
-          icon={<FaEdit />}
-          colorScheme="yellow"
-          size="sm"
-          onClick={() => setIsEditing(true)}
-        />
-
-        <IconButton
-          icon={<FaTrash />}
-          colorScheme="red"
-          size="sm"
-          onClick={deleteTodo}
-        />
-      </HStack>
-    </HStack>
+      <div className="icons">
+        <button className="icon-btn success" onClick={toggleCompleted}>✔</button>
+        <button className="icon-btn warning" onClick={() => setIsEditing(true)}>✏</button>
+        <button className="icon-btn danger" onClick={deleteTodo}>🗑</button>
+      </div>
+    </div>
   );
 };
 
 export default Todo;
+

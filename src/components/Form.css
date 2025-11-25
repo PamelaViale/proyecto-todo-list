@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { VStack, Select, Text } from "@chakra-ui/react";
 import Todo from "./Todo";
+import "./TodoList.css";
 
 const TodoList = ({ todos, setTodos }) => {
   const [filter, setFilter] = useState("all");
@@ -12,31 +12,25 @@ const TodoList = ({ todos, setTodos }) => {
   });
 
   return (
-    <VStack mt={6} spacing={4}>
-      <Select
+    <div className="list-container">
+      <select
+        className="filter"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
-        maxW="200px"
-        mb={4}
       >
         <option value="all">Todas</option>
         <option value="completed">Completadas</option>
         <option value="pending">Pendientes</option>
-      </Select>
+      </select>
 
       {filteredTodos.length === 0 && (
-        <Text opacity={0.6}>No hay tareas para mostrar.</Text>
+        <p className="empty">No hay tareas para mostrar.</p>
       )}
 
       {filteredTodos.map((todo) => (
-        <Todo
-          key={todo.id}
-          todo={todo}
-          todos={todos}
-          setTodos={setTodos}
-        />
+        <Todo key={todo.id} todo={todo} todos={todos} setTodos={setTodos} />
       ))}
-    </VStack>
+    </div>
   );
 };
 
