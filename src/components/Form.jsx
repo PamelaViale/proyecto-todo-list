@@ -1,15 +1,21 @@
 import { useState } from "react";
 import "./Form.css";
 
-
 const Form = ({ todos, setTodos }) => {
   const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState("");
 
+  const validate = (value) => {
+    if (!value.trim()) return "La tarea no puede estar vacía.";
+    if (value.trim().length < 3) return "Debe tener al menos 3 caracteres.";
+    if (value.trim().length > 60) return "Debe tener menos de 60 caracteres.";
+    return "";
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const validation = validateTodo(inputValue, todos);
+    const validation = validate(inputValue); // ✅ Acá estaba el problema
 
     if (validation) {
       setError(validation);
@@ -34,10 +40,7 @@ const Form = ({ todos, setTodos }) => {
         type="text"
         placeholder="Nueva tarea..."
         value={inputValue}
-        onChange={(e) => {
-          setInputValue(e.target.value);
-          if (error) setError(""); // limpia error mientras escribe
-        }}
+        onChange={(e) => setInputValue(e.target.value)}
       />
 
       <button className="btn" type="submit">

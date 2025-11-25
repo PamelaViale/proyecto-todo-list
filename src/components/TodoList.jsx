@@ -8,7 +8,7 @@ const TodoList = ({ todos, setTodos }) => {
   const filteredTodos = todos.filter((todo) => {
     if (filter === "completed") return todo.completed;
     if (filter === "pending") return !todo.completed;
-    return true;
+    return true; // all
   });
 
   return (
@@ -28,10 +28,16 @@ const TodoList = ({ todos, setTodos }) => {
       )}
 
       {filteredTodos.map((todo) => (
-        <Todo key={todo.id} todo={todo} todos={todos} setTodos={setTodos} />
+        <Todo
+          key={todo.id}
+          todo={todo}
+          todos={todos}
+          setTodos={setTodos}
+        />
       ))}
     </div>
   );
 };
 
 export default TodoList;
+

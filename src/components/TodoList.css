@@ -5,13 +5,17 @@
   gap: 12px;
 }
 
-.filter {
-  padding: 8px;
-  width: 200px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
+
 
 .empty {
   opacity: 0.6;
+}
+
+.filter {
+  width: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
