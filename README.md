@@ -78,12 +78,12 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla inicial
 
-![Captura](public/cap1.JPG)
+![Captura]([public/cap1.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap1.JPG))
 
 ### Pantalla con filtros y editado
 
-![Captura](public/cap2.JPG)
+![Captura]([public/cap2.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap2.JPG))
 
 ### Pantalla con error
 
-![Captura](public/cap-3.JPG)
+![Captura]([public/cap-3.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap-3.JPG))
