@@ -9,3 +9,9 @@ body {
   background: #f3f4f6;
   padding: 20px;
 }
+body {
+  background-image: url("/moroccan-flower.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  font-family: "Poppins", sans-serif;
+}
