@@ -78,12 +78,12 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla inicial
 
-![Captura Desktop](public/cap-1.JPG)
+![Captura](.public/cap1.JPG)
 
 ### Pantalla con filtros y editado
 
-![Captura Desktop](public/cap-2.JPG)
+![Captura](.public/cap2.JPG)
 
-### Pnatalla con error
+### Pantalla con error
 
-![Captura Desktop](public/cap-3.JPG)
+![Captura](.public/cap3.JPG)
