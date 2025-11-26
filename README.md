@@ -1,16 +1,89 @@
-# React + Vite
+# Aplicación Todo List — React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción de mi proyecto:
+Es una aplicación de gestión de tareas desarrollada en **React con Vite**.  
+Permite crear, editar, completar, eliminar y filtrar tareas.  
+Todas las tareas se guardan automáticamente en **localStorage**, por lo que permanecen incluso si se recarga la página.
 
-Currently, two official plugins are available:
+El diseño es simple y responsive, con estilos personalizados.
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Funcionalidades principales:
+- Agregar nuevas tareas mediante un input con validación.
+- Editar tareas en línea.
+- Marcar tareas como completadas (las muestro tachadas).
+- Eliminar tareas con confirmación.
+- Filtrar tareas por:
+  - **Todas**
+  - **Completadas**
+  - **Pendientes**
+- Guardado automático en `localStorage` usando `useEffect`.
+- Interfaz responsive.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tecnologías utilizadas
+- **React (Vite)**
+- **JavaScript**
+- **CSS** 
+- **localStorage**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Estructura de mi proyecto:
+
+/src
+/components
+Form.jsx
+TodoList.jsx
+Todo.jsx
+App.jsx
+main.jsx
+index.css
+
+/public
+favicon.png
+moroccan-flower.png
+
+
+## ¿ Cómo ejecutar el proyecto localmente?
+
+### 1. Instalar dependencias
+```bash
+npm install
+
+### 2. Ejecutar el servidor de desarrollo
+npm run dev
+
+### 3. Crear build de producción
+npm run build
+
+### 4. Previsualizar el build
+npm run preview
+
+
+## ¿ Cómo verificar la persistencia en localStorage
+
+Abrir la aplicación en el navegador.
+
+Crear o editar tareas.
+
+Abrir DevTools:
+Application → Local Storage → (tu dominio) → clave: todos
+
+Ver que los datos cambien en tiempo real.
+
+Refrescar la página y confirmar que las tareas siguen allí.
+
+
+### Pantalla inicial
+
+![Captura Desktop](public/cap-1.JPG)
+
+### Pantalla con filtros y editado
+
+![Captura Desktop](public/cap-2.JPG)
+
+### Pnatalla con error
+
+![Captura Desktop](public/cap-3.JPG)
