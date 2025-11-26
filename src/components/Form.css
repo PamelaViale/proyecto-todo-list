@@ -29,3 +29,14 @@
   color: red;
   font-size: 14px;
 }
+.error-msg {
+  margin-top: 4px;
+  color: #e63946; 
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-error {
+  border: 2px solid #e63946 !important;
+  background-color: #ffeaea;
+}

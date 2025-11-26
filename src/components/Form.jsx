@@ -15,7 +15,7 @@ const Form = ({ todos, setTodos }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const validation = validate(inputValue); // ✅ Acá estaba el problema
+    const validation = validate(inputValue);
 
     if (validation) {
       setError(validation);
@@ -36,7 +36,7 @@ const Form = ({ todos, setTodos }) => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <input
-        className="input"
+        className={`input ${error ? "input-error" : ""}`}
         type="text"
         placeholder="Nueva tarea..."
         value={inputValue}
@@ -47,10 +47,11 @@ const Form = ({ todos, setTodos }) => {
         Agregar
       </button>
 
-      {error && <p className="error">{error}</p>}
+      {error && <p className="error-msg">{error}</p>}
     </form>
   );
 };
 
 export default Form;
+
 
