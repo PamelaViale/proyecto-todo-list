@@ -83,7 +83,7 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla con filtros y editado
 
-![image alt](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img2%20(1).JPG)
+![image alt](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/img1.JPG)
 
 
 
