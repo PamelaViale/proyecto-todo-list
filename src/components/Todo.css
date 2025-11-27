@@ -1,0 +1,43 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 6px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success {
+  background: #22c55e;
+}
+
+.warning {
+  background: #facc15;
+}
+
+.danger {
+  background: #ef4444;
+}
