@@ -86,4 +86,4 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla con error
 
-![Captura]([public/cap-3.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap-3.JPG))
+![Captura](https://github.com/PamelaViale/proyecto-todo-list/blob/dead0c52126b3e458caba37bd4fd721e0325e18d/public/img3.JPG)
