@@ -78,11 +78,11 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla inicial
 
-![Captura alt](https://github.com/PamelaViale/proyecto-todo-list/blob/a669c853e3d38c85bd79bec7684790027beab731/public/cap1.JPG)
+![Captura alt](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img1.JPG)
 
 ### Pantalla con filtros y editado
 
-![Captura]([public/cap2.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap2.JPG))
+![Captura]([public/cap2.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img2%20(1).JPG))
 
 ### Pantalla con error
 
