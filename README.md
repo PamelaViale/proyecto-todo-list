@@ -77,8 +77,8 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 
 ### Pantalla inicial
+![texto imagen](/public/img1.JPG)
 
-![image alt](/public/img1.JPG )
 
 
 ### Pantalla con filtros y editado
