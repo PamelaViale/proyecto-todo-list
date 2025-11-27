@@ -78,7 +78,7 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla inicial
 
-![Captura]([public/cap1.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/dev/public/cap1.JPG))
+![Captura alt](https://github.com/PamelaViale/proyecto-todo-list/blob/a669c853e3d38c85bd79bec7684790027beab731/public/cap1.JPG)
 
 ### Pantalla con filtros y editado
 
