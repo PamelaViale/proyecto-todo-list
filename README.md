@@ -78,12 +78,16 @@ Refrescar la página y confirmar que las tareas siguen allí.
 
 ### Pantalla inicial
 
-![Captura alt](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img1.JPG)
+![image alt](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img1.JPG )
+
 
 ### Pantalla con filtros y editado
 
-![Captura]([public/cap2.JPG](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img2%20(1).JPG))
+![image alt](Aquí escriben el permalink de la imagen](https://github.com/PamelaViale/proyecto-todo-list/blob/0c2de5ff39217552bb5126af903614a6ccf97bf5/public/img2%20(1).JPG)
+
+
 
 ### Pantalla con error
 
-![Captura](https://github.com/PamelaViale/proyecto-todo-list/blob/dead0c52126b3e458caba37bd4fd721e0325e18d/public/img3.JPG)
+![image alt](Aquí escriben el permalink de la imagen ](https://github.com/PamelaViale/proyecto-todo-list/blob/dead0c52126b3e458caba37bd4fd721e0325e18d/public/img3.JPG)
+
