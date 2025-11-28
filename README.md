@@ -80,11 +80,11 @@ npm run preview
 
 ### Pantalla inicial
 
-![Captura Desktop](public/cap-1.JPG)
+![Captura Desktop](public/cap1.JPG)
 
 ### Pantalla con filtros y editado
 
-![Captura Desktop](public/cap-2.JPG)
+![Captura Desktop](public/cap2.JPG)
 
 ### Pantalla con error
 
