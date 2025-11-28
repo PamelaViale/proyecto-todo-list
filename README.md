@@ -48,6 +48,21 @@ moroccan-flower.png
 
 ## ¿ Cómo ejecutar el proyecto localmente?
 
+1. Clonar el repositorio
+git clone 
+
+2. Instalar dependencias
+npm install
+
+3. Ejecutar el servidor de desarrollo
+npm run dev
+
+4. Crear build de producción
+npm run build
+
+5. Previsualizar el build
+npm run preview
+
 ### 1. Instalar dependencias
 ```bash
 npm install
@@ -65,15 +80,12 @@ npm run preview
 
 ### Pantalla inicial
 
-![texto imagen](/public/cap1.JPG)
-
+![Captura Desktop](public/cap-1.JPG)
 
 ### Pantalla con filtros y editado
 
-![texto imagen](public/cap2.JPG)
+![Captura Desktop](public/cap-2.JPG)
 
-### Pnatalla con error
+### Pantalla con error
 
-![texto imagen](public/cap-3.JPG)
-
-
+![Captura Desktop](public/cap-3.JPG)
