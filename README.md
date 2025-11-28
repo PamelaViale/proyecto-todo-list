@@ -48,8 +48,8 @@ moroccan-flower.png
 
 ## ¿ Cómo ejecutar el proyecto localmente?
 
-1. Clonar el repositorio
-git clone 
+1. Clonar el repositorio 
+git clone https://github.com/PamelaViale/proyecto-todo-list
 
 2. Instalar dependencias
 npm install
@@ -63,21 +63,20 @@ npm run build
 5. Previsualizar el build
 npm run preview
 
----------------------------------------------
-
-### 1. Instalar dependencias
-```bash
+## Instalar dependencias
+1. Desde bash
 npm install
 
-### 2. Ejecutar el servidor de desarrollo
+2. Ejecutar el servidor de desarrollo
 npm run dev
 
-### 3. Crear build de producción
+3. Crear build de producción
 npm run build
 
-### 4. Previsualizar el build
+4. Previsualizar el build
 npm run preview
 
+---------------------------------------------
 
 
 ## Pantalla inicial
@@ -89,9 +88,16 @@ npm run preview
 ## Pantalla con error
 ![Captura Desktop](./public/cap3_temp.jpg)
 
-
+---------------------------------------------
 
 ### Agradecimientos :
 A ADA ITW, por la gran oportunidad de capacitarme.
 A mi familia, por el apoyo para que yo pueda crecer en esta nueva carrera.
 A mis profes y compañeras por el acompañamiento constante.
+
+---------------------------------------------
+
+
+
+
+
