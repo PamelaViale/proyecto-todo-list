@@ -48,7 +48,7 @@ moroccan-flower.png
 
 ## ¿ Cómo ejecutar el proyecto localmente?
 
-1. Clonar el repositorio
+1. Clonar el repositorio https://github.com/PamelaViale/proyecto-todo-list
 git clone 
 
 2. Instalar dependencias
@@ -65,8 +65,9 @@ npm run preview
 
 ---------------------------------------------
 
-### 1. Instalar dependencias
-```bash
+## Instalar dependencias
+
+### 1. ```bash
 npm install
 
 ### 2. Ejecutar el servidor de desarrollo
@@ -78,6 +79,7 @@ npm run build
 ### 4. Previsualizar el build
 npm run preview
 
+---------------------------------------------
 
 
 ## Pantalla inicial
