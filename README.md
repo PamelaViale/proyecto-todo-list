@@ -90,6 +90,10 @@ npm run preview
 
 ---------------------------------------------
 
+Podes acceder desde VERCEL : https://proyecto-todo-list-nine.vercel.app/
+
+---------------------------------------------
+
 ### Agradecimientos :
 A ADA ITW, por la gran oportunidad de capacitarme.
 A mi familia, por el apoyo para que yo pueda crecer en esta nueva carrera.
