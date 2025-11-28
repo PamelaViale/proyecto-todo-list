@@ -62,28 +62,18 @@ npm run build
 npm run preview
 
 
-## ¿ Cómo verificar la persistencia en localStorage
-
-Abrir la aplicación en el navegador.
-
-Crear o editar tareas.
-
-Abrir DevTools:
-Application → Local Storage → (tu dominio) → clave: todos
-
-Ver que los datos cambien en tiempo real.
-
-Refrescar la página y confirmar que las tareas siguen allí.
-
 
 ### Pantalla inicial
 
-![Captura Desktop](public/cap-1.JPG)
+![texto imagen](/public/cap1.JPG)
+
 
 ### Pantalla con filtros y editado
 
-![Captura Desktop](public/cap-2.JPG)
+![texto imagen](public/cap2.JPG)
 
 ### Pnatalla con error
 
-![Captura Desktop](public/cap-3.JPG)
+![texto imagen](public/cap-3.JPG)
+
+
