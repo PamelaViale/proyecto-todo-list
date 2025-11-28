@@ -63,6 +63,8 @@ npm run build
 5. Previsualizar el build
 npm run preview
 
+---------------------------------------------
+
 ### 1. Instalar dependencias
 ```bash
 npm install
