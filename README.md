@@ -32,26 +32,16 @@ El diseño es simple y responsive, con estilos personalizados.
 
 ## 📂 Estructura de mi proyecto:
 
-proyecto-todo-list/
-├─ public/                # Recursos estáticos
-│  ├─ favicon.png
-│  └─ moroccan-flower.png
-│
-├─ src/                   # Código principal de la app
-│  ├─ components/         # Componentes clave de la aplicación
-│  │  ├─ Todo.jsx         # Lógica de cada tarea individual
-│  │  ├─ Todo.css
-│  │  ├─ TodoList.jsx     # Renderizado y gestión del listado completo
-│  │  ├─ TodoList.css
-│  │  ├─ Form.jsx         # Formulario de creación/edición de tareas
-│  │  └─ Form.css
-│  │
-│  ├─ App.jsx             # Componente raíz
-│  ├─ main.jsx            # Punto de entrada de React
-│  └─ index.css           # Estilos globales
-│
-├─ package.json           # Dependencias y scripts
-└─ vite.config.js         # Configuración de Vite
+```bash
+mi-proyecto/
+├─ public/       # Archivos estáticos (index.html)
+├─ src/          # Código de la aplicación
+│  ├─ components/ # Componentes reutilizables
+│  ├─ styles/     # Estilos CSS
+│  ├─ hooks/      # Lógica reutilizable
+│  └─ services/   # Funciones externas
+├─ node_modules/  # Dependencias instaladas
+```
 
 
 
@@ -102,8 +92,6 @@ npm run preview
 ## Pantalla con error
 ![Captura Desktop](./public/cap3_temp.jpg)
 
-## Pantalla eliminar tarea
-![Captura Desktop](./public/cap4_temp.jpg)
 
 ---------------------------------------------
 
