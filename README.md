@@ -48,8 +48,13 @@ moroccan-flower.png
 
 ## ¿ Cómo ejecutar el proyecto localmente?
 
+<<<<<<< HEAD
 1. Clonar el repositorio https://github.com/PamelaViale/proyecto-todo-list
 git clone 
+=======
+1. Clonar el repositorio 
+git clone https://github.com/PamelaViale/proyecto-todo-list
+>>>>>>> 07e5f72df7f74170210e03baac8d60df89a09541
 
 2. Instalar dependencias
 npm install
@@ -63,20 +68,25 @@ npm run build
 5. Previsualizar el build
 npm run preview
 
+<<<<<<< HEAD
 ---------------------------------------------
 
 ## Instalar dependencias
 
 ### 1. ```bash
+=======
+## Instalar dependencias
+1. Desde bash
+>>>>>>> 07e5f72df7f74170210e03baac8d60df89a09541
 npm install
 
-### 2. Ejecutar el servidor de desarrollo
+2. Ejecutar el servidor de desarrollo
 npm run dev
 
-### 3. Crear build de producción
+3. Crear build de producción
 npm run build
 
-### 4. Previsualizar el build
+4. Previsualizar el build
 npm run preview
 
 ---------------------------------------------
@@ -91,9 +101,20 @@ npm run preview
 ## Pantalla con error
 ![Captura Desktop](./public/cap3_temp.jpg)
 
+---------------------------------------------
 
+Podes acceder desde VERCEL : https://proyecto-todo-list-nine.vercel.app/
+
+---------------------------------------------
 
 ### Agradecimientos :
 A ADA ITW, por la gran oportunidad de capacitarme.
 A mi familia, por el apoyo para que yo pueda crecer en esta nueva carrera.
 A mis profes y compañeras por el acompañamiento constante.
+
+---------------------------------------------
+
+
+
+
+

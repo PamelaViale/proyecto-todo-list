@@ -14,13 +14,16 @@ const Todo = ({ todo, todos, setTodos }) => {
   };
 
   const deleteTodo = () => {
-    if (confirm("¿Eliminar esta tarea?")) {
-      setTodos(todos.filter((t) => t.id !== todo.id));
-    }
+    const confirmDelete = window.confirm("¿Seguro que querés borrar esta tarea?");
+    if (!confirmDelete) return;
+    setTodos(todos.filter((t) => t.id !== todo.id));
   };
 
   const saveEdit = () => {
-    if (!editValue.trim()) return alert("La tarea no puede quedar vacía.");
+    if (!editValue.trim()) {
+      alert("La tarea no puede quedar vacía.");
+      return;
+    }
 
     setTodos(
       todos.map((t) =>
@@ -30,28 +33,39 @@ const Todo = ({ todo, todos, setTodos }) => {
     setIsEditing(false);
   };
 
+  const cancelEdit = () => {
+    setIsEditing(false);
+    setEditValue(todo.text);
+  };
+
   return (
     <div className="todo">
       {isEditing ? (
-        <input
-          className="edit-input"
-          value={editValue}
-          onChange={(e) => setEditValue(e.target.value)}
-          onBlur={saveEdit}
-          autoFocus
-        />
+        <>
+          <input
+            className="edit-input"
+            value={editValue}
+            onChange={(e) => setEditValue(e.target.value)}
+          />
+          <div className="edit-actions">
+            <button className="btn-action save-btn" onClick={saveEdit}>✔️</button>
+            <button className="btn-action cancel-btn" onClick={cancelEdit}>✖️</button>
+          </div>
+        </>
       ) : (
-        <p className={todo.completed ? "completed" : ""}>{todo.text}</p>
+        <>
+          <p className={todo.completed ? "completed" : ""}>{todo.text}</p>
+          <div className="icons">
+            <button className="btn-action success" onClick={toggleCompleted}>✔</button>
+            <button className="btn-action warning" onClick={() => setIsEditing(true)}>✏</button>
+            <button className="btn-action danger" onClick={deleteTodo}>🗑</button>
+          </div>
+        </>
       )}
-
-      <div className="icons">
-        <button className="icon-btn success" onClick={toggleCompleted}>✔</button>
-        <button className="icon-btn warning" onClick={() => setIsEditing(true)}>✏</button>
-        <button className="icon-btn danger" onClick={deleteTodo}>🗑</button>
-      </div>
     </div>
   );
 };
 
 export default Todo;
+
 
