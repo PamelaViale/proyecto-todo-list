@@ -32,29 +32,34 @@ El diseño es simple y responsive, con estilos personalizados.
 
 ## 📂 Estructura de mi proyecto:
 
-/src
-/components
-Form.jsx
-TodoList.jsx
-Todo.jsx
-App.jsx
-main.jsx
-index.css
+proyecto-todo-list/
+├─ public/                # Recursos estáticos
+│  ├─ favicon.png
+│  └─ moroccan-flower.png
+│
+├─ src/                   # Código principal de la app
+│  ├─ components/         # Componentes clave de la aplicación
+│  │  ├─ Todo.jsx         # Lógica de cada tarea individual
+│  │  ├─ Todo.css
+│  │  ├─ TodoList.jsx     # Renderizado y gestión del listado completo
+│  │  ├─ TodoList.css
+│  │  ├─ Form.jsx         # Formulario de creación/edición de tareas
+│  │  └─ Form.css
+│  │
+│  ├─ App.jsx             # Componente raíz
+│  ├─ main.jsx            # Punto de entrada de React
+│  └─ index.css           # Estilos globales
+│
+├─ package.json           # Dependencias y scripts
+└─ vite.config.js         # Configuración de Vite
 
-/public
-favicon.png
-moroccan-flower.png
 
 
 ## ¿ Cómo ejecutar el proyecto localmente?
 
-<<<<<<< HEAD
-1. Clonar el repositorio https://github.com/PamelaViale/proyecto-todo-list
-git clone 
-=======
 1. Clonar el repositorio 
 git clone https://github.com/PamelaViale/proyecto-todo-list
->>>>>>> 07e5f72df7f74170210e03baac8d60df89a09541
+
 
 2. Instalar dependencias
 npm install
@@ -68,16 +73,11 @@ npm run build
 5. Previsualizar el build
 npm run preview
 
-<<<<<<< HEAD
 ---------------------------------------------
 
 ## Instalar dependencias
-
-### 1. ```bash
-=======
-## Instalar dependencias
 1. Desde bash
->>>>>>> 07e5f72df7f74170210e03baac8d60df89a09541
+
 npm install
 
 2. Ejecutar el servidor de desarrollo
@@ -100,6 +100,9 @@ npm run preview
 
 ## Pantalla con error
 ![Captura Desktop](./public/cap3_temp.jpg)
+
+## Pantalla eliminar tarea
+![Captura Desktop](./public/cap4_temp.jpg)
 
 ---------------------------------------------
 
